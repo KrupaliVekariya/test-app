@@ -7,7 +7,7 @@ import { UserService } from 'src/app/services/user.service';
   styleUrls: ['./userlist.component.css']
 })
 export class UserlistComponent implements OnInit {
-
+  userList:any = [];
   constructor(private userService:UserService) { }
 
   ngOnInit(): void {
@@ -17,6 +17,7 @@ export class UserlistComponent implements OnInit {
   async getUserList(){
     const res:any = await this.userService.getAllUser();
     if(res){
+      this.userList = res.data;
       console.log(res.data);
     }
   }

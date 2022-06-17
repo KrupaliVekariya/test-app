@@ -1,1 +1,8 @@
-<p>userlist works!</p>
+<div class="container">
+    <div class="row mb-4" *ngFor="let data of userList">
+        <div class="col">
+            Name : {{data.first_name}} {{data.last_name}}<br>
+            Email : {{data.email}}
+        </div>
+    </div>
+</div>
