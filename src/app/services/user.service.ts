@@ -12,7 +12,7 @@ export class UserService {
   // get all user recored
   getAllUser(){
     return new Promise((resolve,reject) => {
-      let action = config.api.user.userList;
+      const action = config.api.user.userList;
       this.apiService.get(action).subscribe((res:any) => {
         if(res){
           resolve(res);

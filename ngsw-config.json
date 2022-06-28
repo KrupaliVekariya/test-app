@@ -26,5 +26,16 @@
         ]
       }
     }
+  ],
+  "dataGroups": [
+    {
+      "name": "app",
+      "urls": [ "https://reqres.in/api/users" ],
+      "cacheConfig": {
+        "maxSize": 5,
+        "maxAge": "3s",
+        "strategy": "performance"
+      }
+    }
   ]
 }

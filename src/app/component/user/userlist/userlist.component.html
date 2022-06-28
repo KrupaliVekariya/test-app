@@ -1,8 +1,24 @@
 <div class="container">
+    <!-- For user details name -->
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <h3> User List</h3>
+        </div>
+    </div>
+    <!-- Display users lisr -->
     <div class="row mb-4" *ngFor="let data of userList">
-        <div class="col">
-            Name : {{data.first_name}} {{data.last_name}}<br>
-            Email : {{data.email}}
+        <div class="col-sm-12 col-md-12 col-lg-2 d-flex justify-content-center">
+            <img [src]="data.avatar"/>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-10">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <strong>Name : </strong>{{data.first_name}} {{data.last_name}}
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <strong>Email : </strong>{{data.email}}
+                </div>
+            </div>
         </div>
     </div>
 </div>
