@@ -3,11 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { UserlistComponent } from './userlist/userlist.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    redirectTo: 'userList',
-  },
-  {path: 'userList', component: UserlistComponent},
+  // {
+  //   path: '',
+  //   redirectTo: 'userList',
+  // },
+  {path: '', component: UserlistComponent},
 ];
 
 @NgModule({
